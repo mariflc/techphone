@@ -13,194 +13,130 @@
 
 }
 
-*{
-    margin: 0 ;
-    padding: 0;
 
+*{
+    margin: 0;
+    padding: 0;
 }
 
 body{
     background-color: black;
-    margin-left: 250px;
-    margin-right: 250px;
-    height: 3240px;
 }
-
-.container-pai{
-
-    display: flex;
-    flex-direction: column;
-    padding-top: 78px;
-    height: 100%;
-    width: 100%;
-
-}
-.container-logo{
-    display: flex;
-    justify-content: end;
-    align-items: start;
-    height: 191px;
-    width: 893px;
-    margin-bottom: 137px;
-}
-
-.logo{
-    margin-right: 35px;
-    height: 191px;
-    width: 213px;
-}
-
-.container-cta{
-    display: flex;
-    justify-content:start;
-    align-items: start;
-    height: 247px;
-    width:893px;
-    margin-bottom: 78px;
-}
-.cta{
-    color:white;
-    font-size: 27pt;
-    font-family: poppins-bold;
-    line-height: 125.3%;
-}
-
-.vermelho{
-    color: #F3061C;
-
-}
-
-.botao{
-    display: flex;
-    position: relative;
-    justify-content:center;
-    align-items: center;
-    height: 92.77px;
-    width:795px;
-    background-color:#F3061C;
-    color: white;
-    font-family: poppins-bold;
-    font-size: 24pt;
-    border-radius: 21px;
-    border: 0;
-    box-shadow: 0px 4px 35px rgb(243, 6, 28, .5);
-    margin-bottom: 373px;
-}
-
-.botao:hover{
-    cursor:pointer;
-}
-
-.botao:before{
-    content: url("Imagens/wpp.png");
-    transform: translateY(9%);
-    position: absolute;
-    left: 28px;
-}
-
-.container-gabriel {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%); /* Corrige o deslocamento vertical */
-    /*z-index: -1;*/
-}
-
-.container2 {
+header figure{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
 }
-
-.imagem{
-    height: 845.5px;
-    width: 943.35px;
+header figure img{
+    width: 123px;
+    height: 110px;
 }
+main{
+    color: white;
+    padding-left: 150px;
+    padding-right: 150px;
 
-.container-vantagens{
+}
+.pagina1{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+}
+.bloco_maintext{
     display: flex;
     flex-direction: column;
+    align-items: start;
+    justify-content: center; 
+    height: 400px;
+    gap: 35px;
 }
-
-.vantagens{
-    color:white;
-    font-size: 30pt;
-    font-family: poppins-regular;
-    line-height: 125.3%;
-    margin-bottom: 101px;
-}
-
-.vant{
+.bloco_maintext> h1{
     font-family: poppins-bold;
-}
+    line-height: 98%;
+    font-size: 23px;
 
-.tech{
-    font-family: poppins-bold;
+}
+.bloco_maintext> h1 > span{
     color: #F3061C;
 }
-.vantagem1{
-    margin-left: 83px;
-    color:white;
-    font-size: 18pt;
+
+.bloco_maintext > button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #F3061C;
+    border: none;
+    border-radius: 10px;
+    width: 530px;
+    color: white;
+    font-family: poppins-bold;
+    font-size: 20px;
+    text-shadow: 0px 4px 10px rgb(0, 0, 0);
+    height: 70px;
+    cursor: pointer;
+    box-shadow: 0px 4px 45px #F3061C;
+
+}
+.bloco_maintext > button img{
+    margin-left:-140px;
+    transform: scale(.70);
+    margin-right: 60px;
+}
+.bloco_maintext > button:hover{
+    transition: .5s;
+    transform: scale(1.05);
+}
+.foto_gabriel{
+    height: 710px;
+    margin-right: -50px;
+    margin-top: -150px;
+}
+
+.pagina2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.pagina2 figure img{
+    height: 710px;
+    margin-left: -80px;
+
+}
+
+.bloco_benefic h2{
     font-family: poppins-regular;
-    line-height: 125.3%;
-    margin-bottom: 63px;
-    position: relative;
+    line-height: 98%;
+    font-size: 34px;
+    padding-right: 49px;
+    margin-bottom: 80px;
+}
+.h2_bold{
+    font-family: poppins-bold;
 
 }
-.vantagem2{
-    margin-left: 83px;
-    color:white;
-    font-size: 18pt;
+.h2_vermelho{
+    font-family: poppins-bold;
+    color:#F3061C;
+}
+.beneficios{
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-right: 89px;
     font-family: poppins-regular;
-    line-height: 125.3%;
-    margin-bottom: 63px;
-    position: relative;
+    line-height: 98%;
+    font-size: 22px;
 
 }
-.vantagem3{
-    margin-left: 83px;
-    color:white;
-    font-size: 18pt;
-    font-family: poppins-regular;
-    line-height: 125.3%;
-    position: relative;
-
-}
-.vantagem1::first-line{
-    color: #F3061C;
-    font-family: poppins-bold;
-
-}
-.vantagem2::first-line{
-    color: #F3061C;
-    font-family: poppins-bold;
-}
-
-.v3{
-    color: #F3061C;
-    font-family: poppins-bold;
-}
-
-.vantagem1:before{
-    content: url("Imagens/dinheiro.png");
-    transform: translateY(9%);
-    position: absolute;
-    left: -90px;
-}
-.vantagem2:before{
-    content: url("Imagens/entrega.png");
-    transform: translateY(9%);
-    position: absolute;
-    left: -90px;
-}
-.vantagem3:before{
-    content: url("Imagens/taxa.png");
-    transform: translateY(9%);
-    position: absolute;
-    left: -90px;
-}
-
-.destaque{
-    font-family: poppins-bold;
-
+.beneficios img{
+    height: 55px;
 }
