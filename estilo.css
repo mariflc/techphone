@@ -13,54 +13,51 @@
 
 }
 
-
 *{
     margin: 0;
     padding: 0;
 }
-
 body{
-    background-color: black;
-}
-header figure{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding-top: 50px;
-}
-header figure img{
-    width: 123px;
-    height: 110px;
+    color: white;
+    overflow-x: hidden;
+    height: 100vh;
 }
 main{
-    color: white;
-    padding-left: 150px;
-    padding-right: 150px;
+    background-color: black;
 
 }
-.pagina1{
+.bg-home{ /*a img tem o tamanho do container dela */
+    background-image: url(Imagens/Frame\ 3.png);
+    height: 100vh;
+    background-repeat: no-repeat;
     display: flex;
-    flex-direction: row;
-    align-items: start;
     justify-content: center;
+    align-items: end;
+    background-position: center;
+    background-size: cover;
+
+
+/*a partir 884 preciso mudar a imagem para mobile */
 }
 .bloco_maintext{
     display: flex;
     flex-direction: column;
-    align-items: start;
-    justify-content: center; 
-    height: 400px;
-    gap: 35px;
+    gap: 13px;
+    margin-bottom: 80px;
 }
 .bloco_maintext> h1{
     font-family: poppins-bold;
     line-height: 98%;
     font-size: 23px;
+    text-align: center;
+
 
 }
-.bloco_maintext> h1 > span{
-    color: #F3061C;
+.bloco_maintext> p {
+    font-family: poppins-regular;
+    line-height: 98%;
+    font-size: 19px;
+    text-align: center;
 }
 
 .bloco_maintext > button{
@@ -81,33 +78,33 @@ main{
     box-shadow: 0px 4px 45px #F3061C;
     margin-left: auto;
     margin-right: auto;
+    animation: botaoanimado 1s infinite;
 
 }
 .bloco_maintext > button img{
     margin-left:-140px; 
     transform: scale(.70);
-     margin-right: 60px; 
+    margin-right: 60px; 
 }
-.bloco_maintext > button:hover{
-    transition: .5s;
-    transform: scale(1.05);
-}
-.foto_gabriel{
-    height: 710px;
-    margin-right: -50px;
-    margin-top: -150px;
-}
+@keyframes botaoanimado {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.05);
+    }
 
+
+}
 .pagina2{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    gap: 50px;
     align-items: center;
-
 }
 .pagina2 figure img{
-    height: 710px;
-    margin-left: -80px;
+    height: 800px;
 
 }
 
@@ -115,8 +112,8 @@ main{
     font-family: poppins-regular;
     line-height: 98%;
     font-size: 34px;
-    padding-right: 49px;
     margin-bottom: 80px;
+
 }
 .h2_bold{
     font-family: poppins-bold;
@@ -139,6 +136,40 @@ main{
     font-size: 22px;
 
 }
+.beneficios > p{
+}
 .beneficios img{
     height: 55px;
+}
+@media only screen and (max-width: 768px){
+    .bloco_maintext> h1{
+        font-family: poppins-bold;
+        line-height: 98%;
+        font-size: 23px;
+    
+    
+    }
+    .bloco_maintext> p {
+        font-family: poppins-regular;
+        line-height: 98%;
+        font-size: 18px;
+        padding-left: 80px;
+        padding-right: 90px;
+
+    }
+    
+    .bloco_maintext > button{
+        width: 530px;
+        color: white;
+        font-family: poppins-bold;
+        font-size: 20px;
+        height: 70px;
+       
+    }
+
+}
+@media  screen and (max-width: 440px){
+    .bloco_maintext{
+        margin-top: 100px;
+    }
 }
