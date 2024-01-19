@@ -17,6 +17,10 @@
     margin: 0;
     padding: 0;
 }
+html{
+    overflow-x: hidden;
+
+}
 body{
     color: white;
     overflow-x: hidden;
@@ -42,6 +46,9 @@ main{
 .bloco_maintext{
     display: flex;
     flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
     gap: 13px;
     margin-bottom: 80px;
 }
@@ -76,8 +83,7 @@ main{
     height: 70px;
     cursor: pointer;
     box-shadow: 0px 4px 45px #F3061C;
-    margin-left: auto;
-    margin-right: auto;
+
     animation: botaoanimado 1s infinite;
 
 }
@@ -105,6 +111,7 @@ main{
 }
 .pagina2 figure img{
     height: 800px;
+    z-index: -1;
 
 }
 
@@ -141,13 +148,21 @@ main{
 .beneficios img{
     height: 55px;
 }
-@media only screen and (max-width: 768px){
+
+
+
+
+
+
+
+
+
+
+@media  screen and (max-width: 999px){
     .bloco_maintext> h1{
         font-family: poppins-bold;
         line-height: 98%;
         font-size: 23px;
-    
-    
     }
     .bloco_maintext> p {
         font-family: poppins-regular;
@@ -155,21 +170,175 @@ main{
         font-size: 18px;
         padding-left: 80px;
         padding-right: 90px;
-
     }
     
     .bloco_maintext > button{
-        width: 530px;
+        width: 380px;
         color: white;
         font-family: poppins-bold;
         font-size: 20px;
         height: 70px;
-       
+    
+    }
+    .bloco_maintext > button img{
+        margin-left:-70px; 
+        transform: scale(.70);
+        margin-right: 0px; 
+    }
+    .pagina2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+        align-items: center;
+    }
+    .pagina2 figure img{
+        height: 450px;
+    }
+    .bloco_benefic {
+        display:flex ;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .beneficios{
+        padding-right: 0px;
+
+    }
+   
+}
+
+
+@media  screen and (max-width: 440px) and (min-width: 375px){
+    .bloco_maintext{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 13px;
+        margin-bottom: -50px;
+    }
+    .bloco_maintext> h1{
+        font-family: poppins-bold;
+        line-height: 98%;
+        font-size: 20px;
+        text-align: center;
+    }
+    .bloco_maintext> p {
+        font-family: poppins-regular;
+        line-height: 98%;
+        font-size: 18px;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+    .bloco_maintext > button{
+        width: 300px;
+        color: white;
+        font-family: poppins-bold;
+        font-size: 20px;
+        height: 70px;
+        
+    
+    }
+    .bloco_maintext > button img{
+        margin-left:-30px; 
+        transform: scale(.70);
+        margin-right: 0px; 
+    }
+    .pagina2 figure img{
+        height: 350px;
+        margin-top: 100px;
+
+    }
+    .bloco_benefic {
+        display:flex ;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } 
+    .bloco_benefic h2{
+        font-family: poppins-regular;
+        line-height: 98%;
+        font-size: 28px;
+        margin-bottom: 40px;
+    
+    }
+    .beneficios{
+        padding-right: 0px;
+        font-size: 18px;
+
+    }
+    
+}
+@media  screen and (max-width: 360px){
+    .bloco_maintext{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 13px;
+        margin-bottom: -100px;
+    }
+    .bloco_maintext> h1{
+        font-family: poppins-bold;
+        line-height: 98%;
+        font-size: 21px;
+        text-align: center;
+        padding-right: 30px;
+        padding-left:30px ;
+    }
+    .bloco_maintext> p {
+        font-family: poppins-regular;
+        line-height: 98%;
+        font-size: 17px;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+    .bloco_maintext > button{
+        width: 300px;
+        color: white;
+        font-family: poppins-bold;
+        font-size: 20px;
+        height: 70px;
+        
+    
+    }
+    .bloco_maintext > button img{
+        margin-left:-30px; 
+        transform: scale(.70);
+        margin-right: 0px; 
+    }
+    .pagina2 figure img{
+        height: 250px;
+        margin-top: 150px;
+
+    }
+    .bloco_benefic {
+        display:flex ;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .bloco_benefic h2{
+        font-family: poppins-regular;
+        line-height: 98%;
+        font-size: 23px;
+        margin-bottom: 40px;
+    
+    }
+    .beneficios{
+        padding-right: 10px;
+        font-size: 16px;
+
+    }
+}
+@media  screen and (max-width: 1450px) and (min-width: 1000px){
+    
+    .pagina2 figure img{
+        height: 400px;
+
     }
 
-}
-@media  screen and (max-width: 440px){
-    .bloco_maintext{
-        margin-top: 100px;
-    }
 }
