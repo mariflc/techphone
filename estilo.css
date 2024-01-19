@@ -23,6 +23,8 @@ html{
 body{
     color: white;
     height: 100vh;
+    background-color: black;
+
 }
 main{
     background-color: black;
